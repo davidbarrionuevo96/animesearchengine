@@ -1,0 +1,33 @@
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.input {
+    background-color: rgb(66, 65, 77);
+    width: 720px;
+    height: 52px;
+    border-radius: 20px;
+    padding-right: 15px;
+    padding-left: 60px;
+    font-size: 15px;
+    color: #fff;
+    border:1px solid #fff;
+    margin-top: 10%;
+}
+
+.logo {
+    margin-top: 7%;
+    height: 150px;
+}
+.search {
+    height: 22px;
+    position: relative;
+    left: 43px;
+    top: 4px;
+}
+.input:focus {
+    outline: none;
+}
