@@ -1,24 +1,19 @@
 import React from 'react';
-import LoginView from './views/login/LoginView';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
-function App() {
-  const theme = createTheme({
-    palette: {
-      background:{
-        default:"rgb(43, 42, 51)",
-        paper:"rgb(43, 42, 51)"
-      },
-      text: {
-        primary: "#ffffff"
-      }
-    }
-  });
+import { BrowserRouter } from 'react-router-dom';
+import RoutesApp from './routesapp';
+import { theme } from './assets/css/materialtheme';
 
-  return <ThemeProvider theme={theme}>
-    <CssBaseline/>
-    <LoginView />
-  </ThemeProvider>;
+function App() {
+  return (
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <RoutesApp />
+      </ThemeProvider>
+    </BrowserRouter>
+  )
 }
 
 export default App;
